@@ -12,7 +12,7 @@ public class Hotel {
         this.weekdayRateForRegular = weekdayRateForRegular;
         this.weekendRateForRegular = weekendRateForRegular;
         this.weekdayRateForRewarder = weekdayRateForRewarder;
-        this.weekendRateForRewarder = weekendRateForRewarder;
+        this.weekendRateForRewarder= weekendRateForRewarder;
     }
 
     public void setHotelName(String hotelName) {
