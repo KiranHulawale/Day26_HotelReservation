@@ -1,60 +1,69 @@
 package com.bridgelabz;
 
 public class Hotel {
-    private String hotelName;
-    private String WeekDayRegularRate;
-    private String WeekDayRewardRate;
-    private String WeekEndRegularRate;
-    private String WeekEndRewardRate;
+    public String hotelName;
+    public int weekdayRateForRegular;
+    public int weekendRateForRegular;
+    public int weekdayRateForRewarder;
+    public int weekendRateForRewarder;
 
-    public String getHotelName() {
-        return hotelName;
+    public Hotel(String hotelName, int weekdayRateForRegular, int weekendRateForRegular, int weekdayRateForRewarder, int weekendRateForRewarder) {
+        this.hotelName = hotelName;
+        this.weekdayRateForRegular = weekdayRateForRegular;
+        this.weekendRateForRegular = weekendRateForRegular;
+        this.weekdayRateForRewarder = weekdayRateForRewarder;
+        this.weekendRateForRewarder = weekendRateForRewarder;
     }
 
     public void setHotelName(String hotelName) {
         this.hotelName = hotelName;
     }
 
-    public String getWeekDayRegularRate() {
-        return WeekDayRegularRate;
+    public String getHotelName() {
+        return hotelName;
     }
 
-    public void setWeekDayRegularRate(String wDayRegularRate) {
-        this.WeekDayRegularRate = wDayRegularRate;
+    public int getWeekdayRateForRegularCustomer() {
+        return weekdayRateForRegular;
     }
 
-    public String getWeekDayRewardRate() {
-        return WeekDayRewardRate;
+    public void setWeekdayRateForRegularCustomer(int weekdayRate) {
+        this.weekdayRateForRegular = weekdayRate;
     }
 
-    public void setWeekDayRewardRate(String wDayRewardRate) {
-        this.WeekDayRewardRate = wDayRewardRate;
+    public int getWeekendRateForRegularCustomer() {
+        return weekendRateForRegular;
     }
 
-    public String getWeekEndRegularRate() {
-        return WeekEndRegularRate;
+    public void setWeekendRateForRegularCustomer(int weekendRate) {
+        this.weekendRateForRegular = weekendRate;
     }
 
-    public void setWeekEndRegularRate(String wEndRegularRate) {
-        this.WeekEndRegularRate = wEndRegularRate;
+
+    public int getWeekdayRateForRewarder() {
+        return weekdayRateForRewarder;
     }
 
-    public String getWeekEndRewardRate() {
-        return WeekEndRewardRate;
+    public void setWeekdayRateForRewarder(int weekdayRateForRewarder) {
+        this.weekdayRateForRewarder = weekdayRateForRewarder;
     }
 
-    public void setWeekEndRewardRate(String wEndRewardRate) {
-        this.WeekEndRewardRate = wEndRewardRate;
+    public int getWeekendRateForRewarder() {
+        return weekendRateForRewarder;
+    }
+
+    public void setWeekendRateForRewarder(int weekendRateForRewarder) {
+        this.weekendRateForRewarder = weekendRateForRewarder;
     }
 
     @Override
     public String toString() {
-        return "Hotel{" +
-                "hotelName='" + hotelName + '\'' +
-                ", WeekDayRegularRate='" + WeekDayRegularRate + '\'' +
-                ", WeekDayRewardRate='" + WeekDayRewardRate + '\'' +
-                ", WeekEndRegularRate='" + WeekEndRegularRate + '\'' +
-                ", WeekEndRewardRate='" + WeekEndRewardRate + '\'' +
+        return "\n" + "Hotel{" +
+                "HotelName='" + hotelName + '\'' +
+                ", WeekdayRateForRegular=" + weekdayRateForRegular + '\'' +
+                ",WeekendRateForRewarder+" + weekendRateForRegular +
+                ", WeekdayRateForRegular=" + weekdayRateForRewarder + '\'' +
+                ",WeekendRateForRewarder+" + weekendRateForRewarder +
                 '}';
     }
 }
